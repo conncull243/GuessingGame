@@ -30,11 +30,13 @@
         {
             this.groupBox = new System.Windows.Forms.GroupBox();
             this.resultLabel = new System.Windows.Forms.Label();
+            this.sortLabel = new System.Windows.Forms.Label();
             this.groupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox
             // 
+            this.groupBox.Controls.Add(this.sortLabel);
             this.groupBox.Controls.Add(this.resultLabel);
             this.groupBox.ForeColor = System.Drawing.Color.White;
             this.groupBox.Location = new System.Drawing.Point(4, 4);
@@ -47,11 +49,20 @@
             // resultLabel
             // 
             this.resultLabel.AutoSize = true;
-            this.resultLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resultLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.resultLabel.Location = new System.Drawing.Point(7, 20);
             this.resultLabel.Name = "resultLabel";
-            this.resultLabel.Size = new System.Drawing.Size(0, 31);
+            this.resultLabel.Size = new System.Drawing.Size(0, 15);
             this.resultLabel.TabIndex = 0;
+            // 
+            // sortLabel
+            // 
+            this.sortLabel.AutoSize = true;
+            this.sortLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sortLabel.Location = new System.Drawing.Point(7, 68);
+            this.sortLabel.Name = "sortLabel";
+            this.sortLabel.Size = new System.Drawing.Size(0, 15);
+            this.sortLabel.TabIndex = 1;
             // 
             // EndScreen
             // 
@@ -71,5 +82,6 @@
 
         private System.Windows.Forms.GroupBox groupBox;
         private System.Windows.Forms.Label resultLabel;
+        private System.Windows.Forms.Label sortLabel;
     }
 }

@@ -20,7 +20,7 @@ namespace GuessingGame
         //variable that can be used throughout the program 
         public static Random randNum = new Random();
         int rand = randNum.Next(1, 101);
-        List<int> inputs = new List<int>(new int[] { });
+        public static List<int> inputs = new List<int>(new int[] { });
 
         public Form1()
         {

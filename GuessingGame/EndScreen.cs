@@ -15,7 +15,18 @@ namespace GuessingGame
         {
             InitializeComponent();
 
-            resultLabel.Text = "You got it in " + inputs.Count();
+            resultLabel.Text = "You got it in " + Form1.inputs.Count() + " guesses!"
+                + "\n\n" + "Your guesses were: ";
+            for (int i = 0; i < Form1.inputs.Count(); i++)
+            {
+                resultLabel.Text += " " + Form1.inputs[i];
+            }
+            Form1.inputs.Sort();
+            sortLabel.Text = "Sorted list: ";
+            for (int i = 0; i < Form1.inputs.Count(); i++)
+            {
+                sortLabel.Text += " " + Form1.inputs[i];
+            }
         }
     }
 }
